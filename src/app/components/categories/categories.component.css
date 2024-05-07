@@ -4,13 +4,13 @@
   border-bottom: solid 1px hsl(0, 0%, 80%);
 }
 
-.tabs {
+.categories {
   display: flex;
   gap: 8px;
   margin-left: 20px;
 }
 
-.tab {
+.category {
   padding: 8px 12px;
   color: hsl(0, 0%, 50%);
   font-size: 14px;
@@ -20,7 +20,7 @@
   justify-content: center;
 }
 
-.tab > i {
+.category > i {
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -44,4 +44,25 @@
 
 .managers {
   background-color: lightseagreen;
+}
+
+.add-category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 50%);
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.add-category:hover {
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
 }

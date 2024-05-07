@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
-import { TabsComponent } from './components/tabs/tabs.component';
+import { CategoriesComponent } from './components/categories/categories.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
     RouterOutlet,
     HeaderComponent,
     TitleComponent,
-    TabsComponent,
+    CategoriesComponent,
   ],
 })
 export class AppComponent {
