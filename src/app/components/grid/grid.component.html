@@ -1,107 +1,11 @@
 <div class="container">
-  <div class="grid">
-    <div class="col"></div>
-    <div class="role">Junior Engineer</div>
-    <div class="role">Middle Engineer</div>
-    <div class="role">Senior Engineer</div>
-
-    <div class="group">Javascript</div>
-
-    <div class="col">Javascript Basic</div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-
-    <div class="col">Javascript Pro</div>
-    <div class="cell div"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-
-    <div class="add">+ Add Skill</div>
-
-    <div class="group">Angular</div>
-
-    <div class="col">Angular Basic</div>
-    <div class="cell div"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-
-    <div class="col">Angular Pro</div>
-    <div class="cell div"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell div"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-
-    <div class="add">+ Add Skill</div>
-
-    <div class="group">Soft Skills</div>
-
-    <div class="col">Empathy</div>
-    <div class="cell div"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell div active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-    <div class="cell active"></div>
-
-    <div class="add">+ Add Skill</div>
-
-    <div class="add">+ Add Group</div>
-  </div>
+  <app-roles
+    [roles]="[
+      'Junior Engineer',
+      'another',
+      'Middle Engineer',
+      'Senior Engineer'
+    ]"
+  ></app-roles>
+  <app-skill-group></app-skill-group>
 </div>

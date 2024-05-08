@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+}
+
+.skillsColumnWidth {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.role {
+  border-left: solid 1px hsl(0, 0%, 80%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
