@@ -1,53 +1,74 @@
 .container {
   background-color: white;
-  font-size: 14px;
   color: hsl(0, 0%, 50%);
-}
-
-.content {
-  display: flex;
-  width: 100%;
-  height: calc(100vh / 2);
-  overflow: auto;
-}
-
-.aside {
-  margin-top: 50px;
-  min-width: 300px;
-  background-color: aquamarine;
-  position: sticky;
-  left: 0;
+  box-shadow: 0 3px 5px hsl(0, 0%, 90%);
 }
 
 .grid {
-  min-width: 2000px;
-}
-
-.roles {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: sticky;
-  top: 0;
+  display: grid;
+  grid-template-columns: 250px repeat(15, 1fr);
 }
 
 .role {
   border-left: solid 1px hsl(0, 0%, 80%);
-  width: 100%;
-  text-align: center;
-  text-wrap: nowrap;
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 5;
+  font-weight: bold;
 }
 
-.groups {
-  height: 1000px;
+.group {
+  grid-column: span 16;
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 16px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.paths {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.add {
+  grid-column: span 16;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: hsl(0, 0%, 50%);
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.path {
-  height: 60px;
-  border: solid 1px red;
+.col {
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.cell {
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  border-left: solid 1px hsl(0, 0%, 95%);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.div {
+  border-left: solid 1px hsl(0, 0%, 80%);
+}
+
+.active {
+  background-color: hsl(0, 0%, 96%);
 }
