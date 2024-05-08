@@ -13,7 +13,7 @@ export class SkillGroupComponent {
   @Input() groups: number = 5;
   @Input() levelPerGroup: number = 5;
   @Input() skillsColumnWidth: string = '250px';
-  @Input() cellheight: string = '50px';
+  @Input() cellheight: string = '40px';
   @Input() skills: Skill[] = [];
 
   groupStyle() {
