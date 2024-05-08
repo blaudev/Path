@@ -30,4 +30,11 @@ export class SkillGroupComponent {
       (_, i) => i
     );
   }
+
+  protected onClick() {
+    this.skills = [
+      ...this.skills,
+      { name: 'New Skill', level: this.groups * this.levelPerGroup - 1 },
+    ];
+  }
 }
