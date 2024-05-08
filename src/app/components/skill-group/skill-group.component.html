@@ -1,7 +1,9 @@
 <div class="name">{{ name }}</div>
 <div class="content" [style]="groupStyle()">
   @for (skill of skills; track skill.name) {
-  <div class="skill">{{ skill.name }}</div>
+  <div class="skill">
+    <app-editable-text [value]="skill.name"></app-editable-text>
+  </div>
   @for (cell of cells(); track cell) {
   <div
     class="cell"

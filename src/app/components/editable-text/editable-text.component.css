@@ -1,0 +1,20 @@
+.text {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  fill: hsl(0, 0%, 60%);
+  margin-left: 4px;
+  width: 16px;
+}
+
+input {
+  border: solid 1px hsl(0, 0%, 80%);
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  width: 100%;
+}

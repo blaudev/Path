@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Skill } from '../../models/Skill';
+import { EditableTextComponent } from '../editable-text/editable-text.component';
 
 @Component({
   selector: 'app-skill-group',
   standalone: true,
-  imports: [],
+  imports: [EditableTextComponent],
   templateUrl: './skill-group.component.html',
   styleUrl: './skill-group.component.css',
 })
