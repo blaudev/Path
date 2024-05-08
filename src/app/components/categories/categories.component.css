@@ -45,20 +45,3 @@
 .managers {
   background-color: lightseagreen;
 }
-
-.add-category {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px;
-  color: hsl(0, 0%, 50%);
-  font-weight: bold;
-  font-size: 14px;
-  margin-left: 10px;
-}
-
-.add-category:hover {
-  border-radius: 5px;
-  background-color: hsl(0, 0%, 95%);
-  cursor: pointer;
-}
