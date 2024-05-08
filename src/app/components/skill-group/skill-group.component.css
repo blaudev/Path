@@ -1,18 +1,41 @@
-.grid {
-  display: grid;
-  grid-template-columns: 250px repeat(15, 1fr);
-}
-
-.group {
-  grid-column: span 16;
-  border-bottom: solid 1px hsl(0, 0%, 80%);
-  height: 80px;
-  display: flex;
-  align-items: flex-end;
+.name {
   padding-left: 16px;
   padding-bottom: 4px;
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  margin-top: 40px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.content {
+  display: grid;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+}
+
+.div {
+  border-left: solid 1px hsl(0, 0%, 80%) !important;
+}
+
+.cell {
+  border-bottom: solid 1px hsl(0, 0%, 80%);
+  border-left: solid 1px hsl(0, 0%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.active {
+  background-color: hsl(0, 0%, 96%);
 }
 
 .add {
@@ -25,33 +48,4 @@
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
-}
-
-.col {
-  border-bottom: solid 1px hsl(0, 0%, 80%);
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 16px;
-}
-
-.cell {
-  border-bottom: solid 1px hsl(0, 0%, 80%);
-  border-left: solid 1px hsl(0, 0%, 95%);
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cell:hover {
-  background-color: hsl(0, 0%, 90%);
-}
-
-.div {
-  border-left: solid 1px hsl(0, 0%, 80%);
-}
-
-.active {
-  background-color: hsl(0, 0%, 96%);
 }

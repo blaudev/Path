@@ -2,10 +2,101 @@
   <app-roles
     [roles]="[
       'Junior Engineer',
-      'another',
       'Middle Engineer',
-      'Senior Engineer'
+      'Senior Engineer',
+      'Staff Engineer',
+      'Cristian'
     ]"
   ></app-roles>
-  <app-skill-group></app-skill-group>
+  <app-skill-group
+    [name]="'Javascript'"
+    [skills]="[
+    {
+      name: 'Fundamentals I',
+      level: 0,
+    },
+    {
+      name: 'Fundamentals II',
+      level: 2,
+    },
+    {
+      name: 'Tools',
+      level: 2,
+    },
+    {
+      name: 'Libraries',
+      level: 5,
+    },
+    {
+      name: 'Async',
+      level: 10,
+    },
+    {
+      name: 'Advanced data types',
+      level: 15,
+    },
+    {
+      name: 'Testing',
+      level: 3,
+    },
+  ]"
+  ></app-skill-group>
+
+  <app-skill-group
+    [name]="'React'"
+    [skills]="[
+    {
+      name: 'Intermediate',
+      level: 0,
+    },
+    {
+      name: 'Advanced',
+      level: 5,
+    },
+    {
+      name: 'Pro',
+      level: 10,
+    },
+  ]"
+  ></app-skill-group>
+
+  <app-skill-group
+    [name]="'Communication'"
+    [skills]="[
+    {
+      name: 'Communication I',
+      level: 0,
+    },
+    {
+      name: 'Communication II',
+      level: 5,
+    },
+    {
+      name: 'Communication III',
+      level: 15,
+    },
+  ]"
+  ></app-skill-group>
+
+  <app-skill-group
+    [name]="'Performance'"
+    [skills]="[
+    {
+      name: 'Performance I',
+      level: 0,
+    },
+    {
+      name: 'Performance II',
+      level: 5,
+    },
+    {
+      name: 'Performance III',
+      level: 15,
+    },
+    {
+      name: 'Performance IV',
+      level: 20,
+    },
+  ]"
+  ></app-skill-group>
 </div>

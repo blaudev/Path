@@ -1,9 +1,15 @@
+:host {
+  position: sticky;
+  top: 0;
+}
+
 .container {
+  background-color: white;
   display: grid;
   border-bottom: solid 1px hsl(0, 0%, 80%);
 }
 
-.skillsColumnWidth {
+.skills {
   height: 50px;
   display: flex;
   align-items: center;
