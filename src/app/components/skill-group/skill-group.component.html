@@ -8,9 +8,10 @@
     [style.height]="cellheight"
     [class.active]="cell >= skill.level"
     [class.div]="cell % levelPerGroup === 0"
+    (click)="setSkillLevel(skill, cell)"
   ></div>
   } }
 </div>
 <div>
-  <a class="addButton" (click)="onClick()">+ Add Skill</a>
+  <a class="addButton" (click)="addSkill()">+ Add Skill</a>
 </div>

@@ -31,10 +31,14 @@ export class SkillGroupComponent {
     );
   }
 
-  protected onClick() {
+  protected addSkill() {
     this.skills = [
       ...this.skills,
       { name: 'New Skill', level: this.groups * this.levelPerGroup - 1 },
     ];
+  }
+
+  protected setSkillLevel(skill: Skill, level: number) {
+    this.skills = this.skills.map((s) => (s === skill ? { ...s, level } : s));
   }
 }
