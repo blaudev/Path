@@ -12,6 +12,7 @@
 }
 
 .aside {
+  margin-top: 50px;
   min-width: 300px;
   background-color: aquamarine;
   position: sticky;
@@ -41,7 +42,12 @@
   height: 1000px;
 }
 
-.topics {
-  position: sticky;
-  left: 0;
+.paths {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.path {
+  height: 60px;
+  border: solid 1px red;
 }
