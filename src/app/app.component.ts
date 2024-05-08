@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { TitleComponent } from './components/title/title.component';
 import { CategoriesComponent } from './components/categories/categories.component';
+import { GridComponent } from './components/grid/grid.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
     HeaderComponent,
     TitleComponent,
     CategoriesComponent,
+    GridComponent,
   ],
 })
 export class AppComponent {

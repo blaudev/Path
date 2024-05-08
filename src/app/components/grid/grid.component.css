@@ -1,0 +1,47 @@
+.container {
+  background-color: white;
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh / 2);
+  overflow: auto;
+}
+
+.aside {
+  min-width: 300px;
+  background-color: aquamarine;
+  position: sticky;
+  left: 0;
+}
+
+.grid {
+  min-width: 2000px;
+}
+
+.roles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+}
+
+.role {
+  border-left: solid 1px hsl(0, 0%, 80%);
+  width: 100%;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.groups {
+  height: 1000px;
+}
+
+.topics {
+  position: sticky;
+  left: 0;
+}
